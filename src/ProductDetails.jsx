@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import products from "./data/Product";
+import products from "./data/product";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -9,7 +9,7 @@ function ProductDetails() {
   const product = products.find((item) => item.id === Number(id));
 
   if (!product) {
-    alert("Product not found. Go back to homepage");
+    return <h2>Product not found.</h2>;
   }
 
   // ...
