@@ -1,4 +1,4 @@
-import products from "./data/product";
+import products from "./data/Product";
 import { Link } from "react-router-dom";
 
 function Product() {
